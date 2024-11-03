@@ -7,17 +7,18 @@ import { Card } from "@/components/ui/card";
 
 export default function Home() {
   const tickets = [
-    {
-      name: "10 TICKETS",
-      price: "10,000",
-      icon: <Ticket className="w-6 h-6" />,
-      features: ["Group Entry", "Special Queue", "Exclusive Area Access"],
-    },
+    
     {
       name: "REGULAR",
       price: "5,000",
       icon: <Music className="w-6 h-6" />,
       features: ["Standard Entry", "Access to Main Area", "Bar Access"],
+    },
+    {
+      name: "VIP",
+      price: "10,000",
+      icon: <Ticket className="w-6 h-6" />,
+      features: ["Group Entry", "Special Queue", "Exclusive Area Access"],
     },
     {
       name: "TABLE OF 5",
