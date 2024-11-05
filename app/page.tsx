@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Sparkles, Music, PartyPopper, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Script from "next/script";
 
 export default function Home() {
   const tickets = [
@@ -36,6 +37,21 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-black text-white">
+      {/* Tawk.to Widget Script */}
+      <Script id="tawk-to-widget" strategy="afterInteractive">
+        {`
+          var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+          (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e918dc269e9320caac288d3/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+          })();
+        `}
+      </Script>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -110,7 +126,7 @@ export default function Home() {
             Join the Experience
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Don't miss out on the most exclusive party of the year. Limited tickets available.
+            Dont miss out on the most exclusive party of the year. Limited tickets available.
           </p>
         </motion.div>
       </div>
