@@ -151,7 +151,7 @@ export default function Home() {
 
             <div className="mb-6">
               <p className="text-lg text-gray-300">
-                Account Number: <span className="font-bold">5805060636</span>
+                Account Number: <span className="font-bold">4801372882</span>
               </p>
               <p className="text-lg text-gray-300">
                 Account Name: <span className="font-bold">GILIP SOLUTIONS</span>
