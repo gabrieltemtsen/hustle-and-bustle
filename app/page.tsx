@@ -60,11 +60,52 @@ export default function Home() {
             Tickets are sold out online, but you can still purchase them in person at the venue.
           </p>
           <div className="mt-10">
-            <Sparkles className="w-16 h-16 text-purple-400 mx-auto mb-4" />
-            <p className="text-xl text-gray-300 font-semibold">
-              Thank you for your incredible support! 💜
-            </p>
-            <PartyPopper className="w-16 h-16 text-purple-400 mx-auto mt-6" />
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-purple-300">
+              How to Purchase Tickets
+            </h3>
+            <ol className="list-decimal list-inside text-gray-300 text-left max-w-2xl mx-auto mb-6 space-y-4">
+              <li>
+                Choose your desired ticket category from the options above.
+              </li>
+              <li>
+                Transfer the exact amount for your ticket to the account details provided below.
+              </li>
+              <li>
+                Once you've made the transfer, gather your transaction invoice.
+              </li>
+              <li>
+                Use the chat option on this page to submit your invoice, along with your name and email.
+              </li>
+              <li>
+                Wait for approval and verification. After verification, you'll receive your Ticket QR code.
+              </li>
+              <li>
+                Present your QR code at the event for entry. Enjoy the experience!
+              </li>
+            </ol>
+
+            <div className="mb-6">
+              <p className="text-lg text-gray-300">
+                Account Number: <span className="font-bold">4801372882</span>
+              </p>
+              <p className="text-lg text-gray-300">
+                Account Name: <span className="font-bold">GILIP SOLUTIONS</span>
+              </p>
+              <p className="text-lg text-gray-300">
+                Bank Name: <span className="font-bold">Moniepoint MFB</span>
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <iframe
+                src="https://lu.ma/embed/event/evt-ETtGmBrTSgsF5E5/simple"
+                width="600"
+                height="450"
+                style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
+                aria-hidden="false"
+                tabIndex={0}
+              ></iframe>
+            </div>
           </div>
         </motion.div>
       </div>
